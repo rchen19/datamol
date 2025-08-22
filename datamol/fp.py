@@ -42,6 +42,7 @@ _FP_FUNCS = {
     # NOTE(hadim): bad for pickling?
     "estate": lambda x, **args: EStateFingerprinter.FingerprintMol(x)[0],
     "avalon-count": pyAvalonTools.GetAvalonCountFP,
+    "avalon": pyAvalonTools.GetAvalonFP,
     **_FP_GENERATORS,
 }
 
